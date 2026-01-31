@@ -1,0 +1,259 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Coding\\FirstWebsite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\views\\home\\partials\\_period-apppartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\views\\home\\partials\\_period-apppartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\.github\\workflows\\deploy.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\.github\\workflows\\deploy.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\views\\home\\partials\\_3d-gamepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\views\\home\\partials\\_3d-gamepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\views\\home\\partials\\_achievementpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\views\\home\\partials\\_achievementpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\views\\home\\partials\\_internshippartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\views\\home\\partials\\_internshippartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\views\\home\\partials\\_cos-designpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\views\\home\\partials\\_cos-designpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.gitignore",
+              "RelativeDocumentMoniker": "FirstWebsite\\.gitignore",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.gitignore",
+              "RelativeToolTip": "FirstWebsite\\.gitignore",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-31T10:03:33.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "FirstWebsite\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "FirstWebsite\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T09:34:34.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "deploy.yml",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.github\\workflows\\deploy.yml",
+              "RelativeDocumentMoniker": "FirstWebsite\\.github\\workflows\\deploy.yml",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.github\\workflows\\deploy.yml",
+              "RelativeToolTip": "FirstWebsite\\.github\\workflows\\deploy.yml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-01-31T09:24:23.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Program.cs",
+              "RelativeDocumentMoniker": "FirstWebsite\\Program.cs",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Program.cs",
+              "RelativeToolTip": "FirstWebsite\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T09:08:38.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "web.config",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\web.config",
+              "RelativeDocumentMoniker": "FirstWebsite\\web.config",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\web.config",
+              "RelativeToolTip": "FirstWebsite\\web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-01-31T09:08:00.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_period-appPartial.cshtml",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Partials\\_period-appPartial.cshtml",
+              "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\Partials\\_period-appPartial.cshtml",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Partials\\_period-appPartial.cshtml",
+              "RelativeToolTip": "FirstWebsite\\Views\\Home\\Partials\\_period-appPartial.cshtml",
+              "ViewState": "AgIAAAIBAAAAAAAAAAAqwAgBAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-30T10:54:59.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_internshipPartial.cshtml",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Partials\\_internshipPartial.cshtml",
+              "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\Partials\\_internshipPartial.cshtml",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Partials\\_internshipPartial.cshtml",
+              "RelativeToolTip": "FirstWebsite\\Views\\Home\\Partials\\_internshipPartial.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAE0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-31T04:43:15.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_cos-designPartial.cshtml",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Partials\\_cos-designPartial.cshtml",
+              "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\Partials\\_cos-designPartial.cshtml",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Partials\\_cos-designPartial.cshtml",
+              "RelativeToolTip": "FirstWebsite\\Views\\Home\\Partials\\_cos-designPartial.cshtml",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAEwGoAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-31T05:07:06.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "FirstWebsite\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAAJ8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-31T04:50:30.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_achievementPartial.cshtml",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Partials\\_achievementPartial.cshtml",
+              "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\Partials\\_achievementPartial.cshtml",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Partials\\_achievementPartial.cshtml",
+              "RelativeToolTip": "FirstWebsite\\Views\\Home\\Partials\\_achievementPartial.cshtml",
+              "ViewState": "AgIAAEgBAAAAAAAAAAAAACYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-31T04:02:49.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\About.cshtml",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "FirstWebsite\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-30T10:55:42.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "FirstWebsite\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAPYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-31T03:43:09.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_3d-gamePartial.cshtml",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Partials\\_3d-gamePartial.cshtml",
+              "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\Partials\\_3d-gamePartial.cshtml",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Partials\\_3d-gamePartial.cshtml",
+              "RelativeToolTip": "FirstWebsite\\Views\\Home\\Partials\\_3d-gamePartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T10:55:22.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FirstWebsite\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FirstWebsite\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-25T03:56:00.889Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
