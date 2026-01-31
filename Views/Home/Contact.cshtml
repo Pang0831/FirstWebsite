@@ -1,0 +1,246 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+
+<div class="container mt-2 mb-5" style="padding-top: 100px;">
+    <div class="text-center mb-5 reveal-wrapper" style="--delay: 1;">
+        <h1 class="display-4 fw-bold mb-4" style="letter-spacing: 10px;">GET IN TOUCH</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <p class="lead">Currently looking for internship opportunities and freelance projects.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-5 border-end pe-md-5 reveal-wrapper" style="--delay: 2;">
+            <form asp-action="SendEmail" method="post">
+                <div class="mb-3">
+                    <label class="small text-muted mb-1">NAME</label>
+                    <input type="text" name="Name" class="form-control rounded-0 custom-input shadow-none" required>
+                </div>
+                <div class="mb-3">
+                    <label class="small text-muted mb-1">EMAIL</label>
+                    <input type="email" name="Email" class="form-control rounded-0 custom-input shadow-none" required>
+                </div>
+                <div class="mb-4">
+                    <label class="small text-muted mb-1">MESSAGE</label>
+                    <textarea name="Message" class="form-control rounded-0 custom-input shadow-none" rows="5" required></textarea>
+                </div>
+
+                @if (ViewBag.Message != null)
+                {
+                    <p class="text-success small">@ViewBag.Message</p>
+                }
+                @if (ViewBag.Error != null)
+                {
+                    <p class="text-danger small">@ViewBag.Error</p>
+                }
+
+                <button type="submit" class="btn btn-creme rounded-0 w-100 py-3 fw-bold">SEND MESSAGE</button>
+            </form>
+        </div>
+
+        <div class="col-md-4 offset-md-1 mt-5 mt-md-0 reveal-wrapper" style="--delay: 3;">
+            <div class="mb-5 contact-info-item">
+                <p class="mb-1 fw-bold text-creme-dark">EMAIL</p>
+                <a href="mailto:jqi0131@gmail.com" class="text-muted text-decoration-none hover-link">jqi0131@gmail.com</a>
+            </div>
+
+            <div class="mb-5 contact-info-item">
+                <p class="mb-1 fw-bold text-creme-dark">LOCATION</p>
+                <p class="text-muted mb-0">Johor, Malaysia</p>
+            </div>
+
+            <div class="mb-5 contact-info-item">
+                <p class="mb-1 fw-bold text-creme-dark">SOCIAL MEDIA</p>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://www.linkedin.com/in/pang-jia-qi-76967a222/recent-activity/all/" class="text-muted text-decoration-none hover-link">
+                            <i class="bi bi-linkedin me-2"></i>LINKEDIN
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Use the same body background as the About Page */
+    body {
+        background: linear-gradient(180deg, #FFFFFF 0%, #FAF9F6 100%);
+        min-height: 100vh;
+    }
+
+    /* Creme Colored Inputs */
+    .custom-input {
+        border: 1px solid #C7B8A2;
+        background-color: transparent;
+        transition: all 0.3s ease;
+    }
+
+    .form-control:focus {
+        border-color: #8A7B66; /* Darker creme for focus */
+        background-color: #fff;
+        box-shadow: none;
+    }
+
+    /* Theme Button */
+    .btn-creme {
+        background-color: #C7B8A2;
+        color: white;
+        border: none;
+        letter-spacing: 2px;
+        transition: all 0.3s ease;
+    }
+
+        .btn-creme:hover {
+            background-color: #8A7B66;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+    /* Staggered Animations Logic */
+    .reveal-wrapper {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition-delay: calc(var(--delay) * 0.15s);
+    }
+
+        .reveal-wrapper.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    .text-creme-dark {
+        color: #8A7B66;
+    }
+
+    .hover-link:hover {
+        color: #C7B8A2 !important;
+        padding-left: 5px;
+        transition: 0.3s ease;
+    }
+</style>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                } else {
+                    entry.target.classList.remove("active");
+                }
+            });
+        }, observerOptions);
+
+        // Corrected selection and loop
+        const revealElements = document.querySelectorAll(".reveal-wrapper");
+        revealElements.forEach((el) => {
+            observer.observe(el);
+        });
+    });
+</script>
+
+
+@* <div class="container mt-2 mb- fade-in" style="padding-top: 100px;">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold mb-4" style="letter-spacing: 10px;">GET IN TOUCH</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <p class="lead">Currently looking for internship opportunities and freelance projects.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-5 border-end pe-md-5">
+            <form asp-action="SendEmail" method="post">
+                <div class="mb-3">
+                    <label class="small text-muted mb-1">NAME</label>
+                    <input type="text" name="Name" class="form-control rounded-0 border-dark shadow-none" required>
+                </div>
+                <div class="mb-3">
+                    <label class="small text-muted mb-1">EMAIL</label>
+                    <input type="email" name="Email" class="form-control rounded-0 border-dark shadow-none" required>
+                </div>
+                <div class="mb-4">
+                    <label class="small text-muted mb-1">MESSAGE</label>
+                    <textarea name="Message" class="form-control rounded-0 border-dark shadow-none" rows="5" required></textarea>
+                </div>
+
+                @if (ViewBag.Message != null)
+                {
+                    <p class="text-success">@ViewBag.Message</p>
+                }
+                @if (ViewBag.Error != null)
+                {
+                    <p class="text-danger">@ViewBag.Error</p>
+                }
+
+                <button type="submit" class="btn btn-dark rounded-0 w-100 py-3 fw-bold">SEND MESSAGE</button>
+            </form>
+        </div>
+
+        <div class="col-md-4 offset-md-1 mt-5 mt-md-0">
+            <div class="mb-5">
+                <p class="mb-1"><strong>EMAIL</strong></p>
+                <a href="mailto:jqi0131@gmail.com" class="text-muted text-decoration-none">jqi0131@gmail.com</a>
+            </div>
+
+            <div class="mb-5">
+                <p class="mb-1"><strong>LOCATION</strong></p>
+                <p class="text-muted mb-0">Johor, Malaysia</p>
+            </div>
+
+            <div class="mb-5">
+                <p class="mb-1"><strong>SOCIAL MEDIA</strong></p>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://www.linkedin.com/in/pang-jia-qi-76967a222/" class="text-muted text-decoration-none">LINKEDIN</a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> *@
+
+@* 
+<style>
+    body {
+        background-color: #ffffff;
+        color: #000000;
+        font-family: 'Helvetica', Arial, sans-serif;
+    }
+    /* Form Focus style from your reference */
+    .form-control:focus {
+        border-color: #000;
+        background-color: #f8f9fa;
+        box-shadow: none;
+    }
+
+    .fade-in {
+        animation: fadeIn 1s ease-in;
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style> *@

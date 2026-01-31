@@ -1,0 +1,22 @@
+﻿@* namespace FirstWebsite.Views
+{
+    public class Login
+    {
+    }
+} *@
+
+<div class="container mt-5 text-center">
+    <h2 class="fw-bold mb-4">ADMIN ACCESS</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <form asp-action="Login" method="post">
+                <input type="password" name="password" class="form-control rounded-0 mb-3" placeholder="Enter Password" required>
+                @if (ViewBag.Error != null)
+                {
+                    <p class="text-danger">@ViewBag.Error</p>
+                }
+                <button type="submit" class="btn btn-dark w-100 rounded-0">LOGIN</button>
+            </form>
+        </div>
+    </div>
+</div>

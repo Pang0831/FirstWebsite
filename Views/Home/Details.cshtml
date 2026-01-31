@@ -1,0 +1,162 @@
+﻿@model FirstWebsite.Models.Project
+
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div style="background-color: #f7f8f9; width: 100%; margin-top: 0px; border-bottom: 1px solid #eee;">
+    <div class="container py-5 fade-in">
+        <div class="row align-items-end">
+            <div class="col-md-8">
+                <h1 class="display-3 fw-bold mb-3" style="letter-spacing: 5px;">@Model.Title.ToUpper()</h1>
+                <p class="lead text-muted mb-0" style="letter-spacing: 2px;">#@Model.Tool.ToUpper()</p>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <a href="/" class="text-dark text-decoration-none border-bottom border-dark pb-1 small fw-bold">BACK TO PROJECTS</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5 fade-in">
+    <div class="row align-items-center">
+        <div class="col-md-4">
+            <h3 class="small fw-bold mb-4" style="letter-spacing: 2px;">OVERVIEW</h3>
+            <p class="text-muted mb-5">@Model.Description</p>
+        </div>
+        <div class="col-md-7 offset-md-1">
+            @if (!string.IsNullOrEmpty(Model.Challenge))
+            {
+                <div class="mb-5 border-start border-dark ps-4">
+                    <h4 class="small fw-bold mb-3" style="letter-spacing: 2px;">THE CHALLENGE</h4>
+                    <p>@Model.Challenge</p>
+                </div>
+            }
+            @if (!string.IsNullOrEmpty(Model.Solution))
+            {
+                <div class="mb-5 border-start border-dark ps-4">
+                    <h4 class="small fw-bold mb-3" style="letter-spacing: 2px;">THE SOLUTION</h4>
+                    <p>@Model.Solution</p>
+                </div>
+            }
+        </div>
+    </div>
+
+    @* @if (Model.Id == "period-app")
+    {
+        <partial name="Partials/_PeriodAppPartial" model="Model" />
+    }
+    else if (Model.Id == "cos-design")
+    {
+        <partial name="Partials/_CosDesignPartial" model="Model" />
+    }
+    else
+    {
+        <div class="row g-4">
+            <div class="col-md-6"><img src="@Model.ImageUrl" class="img-fluid border"></div>
+            <div class="col-md-6"><img src="@Model.ImageUrl" class="img-fluid border"></div>
+        </div>
+    } *@
+
+    @{
+        // 1. Build the path string exactly like your folder structure
+        string partialName = $"Partials/_{Model.Id}Partial";
+
+        // 2. Try to find the view. If it's missing, show a default layout instead of crashing.
+        var viewResult = Html.PartialAsync(partialName, Model);
+    }
+
+    @try
+    {
+        <partial name="@partialName" model="Model" />
+    }
+    catch (Exception)
+    {
+        <div class="row g-4 mb-5">
+            <div class="col-md-12">
+                <div class="p-5 bg-light text-center border">
+                    <img src="@Model.ImageUrl" class="img-fluid shadow-sm mb-3" style="max-height: 500px;">
+                    <p class="text-muted">Visual showcase for @Model.Title</p>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+
+<hr class="mt-5 mb-0" style="opacity: 0.1;">
+
+<div class="next-project-bar py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-end align-items-center">
+
+                <a asp-controller="Home" asp-action="Details" asp-route-id="@ViewBag.NextProjectId" class="next-link">
+                    <div class="text-end me-3">
+                        <span class="text-muted d-block" style="font-size: 0.7rem; letter-spacing: 1px;">NEXT PROJECT</span>
+                        <span class="next-text">@ViewBag.NextProjectTitle.ToUpper()</span>
+                    </div>
+                    <span class="next-arrow">→</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .next-project-bar {
+        background-color: #fff;
+    }
+
+    .next-link {
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        align-items: center;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+        .next-link:hover {
+            opacity: 0.7;
+            transform: translateX(5px); /* Slight movement on hover */
+            color: #000;
+        }
+
+    /* Reduced Font Size for the "Next" text */
+    .next-text {
+        font-size: 1.1rem; /* Adjust this number to make it smaller or larger */
+        font-weight: 700;
+        letter-spacing: 3px;
+        display: block;
+    }
+
+    .next-arrow {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-left: 10px;
+    }
+</style>
+
+<style>
+    /* Ensure the body has no default horizontal padding that might block the 100% width */
+    body {
+        overflow-x: hidden;
+    }
+
+    .fade-in {
+        animation: fadeIn 1s ease-out;
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>

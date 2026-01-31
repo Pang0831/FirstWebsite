@@ -1,0 +1,217 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="hero-section text-center">
+    <h1 class="display-1 fw-bold main-title">PANG JIA QI</h1>
+
+    <p class="subtitle text-muted">PROJECT PORTFOLIO & CREATIVE DESIGN</p>
+
+    <div class="intro-box mt-5">
+        <p class="lead">
+            I am a creative designer specializing in
+            <strong>User Interface</strong>, <strong>Game Design</strong>, and <strong>Visual Branding</strong>.
+        </p>
+    </div>
+</div>
+
+@model List<Project>
+
+<div class="container mt-5">
+    <div class="row g-4">
+        @{
+            int delay = 1;
+        }
+ @* Initialize a counter *@
+        @foreach (var project in Model)
+        {
+            <div class="col-md-6 col-lg-4 reveal-wrapper" style="--delay: @(delay);">
+                <a asp-controller="Home" asp-action="Details" asp-route-id="@project.Id" class="text-decoration-none text-dark">
+                    <div class="project-card">
+                        <div class="image-container shadow-sm">
+                            <img src="@project.ImageUrl" class="img-fluid" alt="@project.Title">
+                            <div class="overlay">
+                                <div class="text">VIEW PROJECT</div>
+                            </div>
+                        </div>
+                        <div class="project-info mt-3 text-center">
+                            <h5 class="fw-bold" style="letter-spacing: 2px;">@project.Title.ToUpper()</h5>
+                            <p class="text-muted small">@project.Tool.ToUpper()</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            delay++;
+     @* Increase delay for the next project card *@
+        }
+    </div>
+</div>
+
+@* <div class="container reveal-wrapper" style="--delay: 1;">
+    <div class="container mt-5">
+        <div class="row g-4">
+            @foreach (var project in Model)
+            {
+                <div class="col-md-6 col-lg-4"> *@
+                    @* Use only ONE anchor tag for the whole card *@
+@*                     <a asp-controller="Home" asp-action="Details" asp-route-id="@project.Id" class="text-decoration-none text-dark">
+                        <div class="project-card">
+                            <div class="image-container">
+                                <img src="@project.ImageUrl" class="img-fluid" alt="@project.Title">
+                                <div class="overlay">
+                                    <div class="text">VIEW PROJECT</div>
+                                </div>
+                            </div>
+                            <div class="project-info mt-3">
+                                <h5 class="fw-bold">@project.Title.ToUpper()</h5>
+                                <p class="text-muted small">@project.Tool.ToUpper()</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div> *@
+
+<style>
+    .hero-section {
+        padding: 100px 0;
+        animation: fadeIn 1.5s ease-in;
+    }
+
+    .main-title {
+        letter-spacing: 12px; /* Extra spacing for that high-end look */
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        letter-spacing: 5px;
+        font-size: 0.9rem;
+    }
+
+    .intro-box {
+        max-width: 600px;
+        margin: 0 auto;
+        border-top: 1px solid #000;
+        padding-top: 30px;
+    }
+
+    /* Simple fade-in animation */
+    @@keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 1. Update the Reveal Wrapper to be smoother */
+    .reveal-wrapper {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition-delay: calc(var(--delay) * 0.1s); /* Faster stagger (0.1s) */
+    }
+
+        /* 2. The Visible State (Triggered by JS) */
+        .reveal-wrapper.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    .project-card {
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+
+        .project-card:hover .text {
+            background: #C7B8A2;
+            color: white;
+            border-color: #C7B8A2;
+        }
+        .project-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .project-card:hover .overlay {
+            opacity: 1;
+        }
+
+    /* .image-container {
+        position: relative;
+        overflow: hidden;
+        background-color: #f8f9fa;
+        aspect-ratio: 6 / 3; /* Keeps all boxes same size 
+    } */
+
+    /* Make images look premium */
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 4px; /* Slight roundness */
+        background-color: #f8f9fa;
+        aspect-ratio: 16 / 10; /* Better cinematic ratio */
+    }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(255,255,255,0.8);
+        /* These three lines handle the perfect centering */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* .overlay .text {
+        letter-spacing: 2px;
+        font-weight: bold;
+        border: 1px solid #000;
+        padding: 10px 20px;
+    } */
+        /* Update the Overlay Button to use your Creme Palette */
+        .overlay .text {
+            letter-spacing: 2px;
+            font-weight: bold;
+            border: 1px solid #C7B8A2; /* Your Creme Color */
+            color: #000;
+            background: white;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                } else {
+                    entry.target.classList.remove("active");
+                }
+            });
+        }, observerOptions);
+
+        // Corrected selection and loop
+        const revealElements = document.querySelectorAll(".reveal-wrapper");
+        revealElements.forEach((el) => {
+            observer.observe(el);
+        });
+    });
+</script>

@@ -1,0 +1,226 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+
+<div class="container mt-5 pt-lg-5">
+    <div class="row align-items-start">
+        <div class="col-md-5 mb-5 mb-md-0">
+            <div class="reveal-wrapper" style="--delay: 1;">
+                <div class="profile-img-wrapper mb-4 shadow-sm">
+                    <img src="/images/main/me.png" class="img-fluid" alt="Pang Jia Qi">
+                </div>
+            </div>
+
+            <div class="reveal-wrapper" style="--delay: 2;">
+                <h1 class="display-4 fw-bold mb-4" style="letter-spacing: 5px;">ABOUT ME</h1>
+                <p class="lead mb-4">
+                    Hello! I am <strong>Pang Jia Qi</strong>, a designer and developer focused on
+                    bridging the gap between aesthetic design and functional technology.
+                </p>
+                <p class="text-muted">
+                    Currently pursuing a degree in <strong>Mathematic Computer Graphic</strong> at
+                    Universiti Malaysia Sabah (UMS). I treat every technical challenge—from Unity collision bugs to complex 3D workflows—as an opportunity for disciplined self-learning.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6 offset-md-1">
+
+            <div class="reveal-wrapper" style="--delay: 3;">
+                <div class="about-section mb-5">
+                    <h4 class="fw-bold border-bottom pb-2 mb-3 text-uppercase">My Philosophy</h4>
+                    <p class="text-muted small">
+                        I don't just design; I solve. My projects reflect a journey of proactive learning—utilizing resources like YouTube and Rednote to master tools like <strong>Unity</strong>, <strong>Blender</strong>, and <strong>Figma</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="reveal-wrapper" style="--delay: 4;">
+                <div class="about-section mb-5">
+                    <h4 class="fw-bold border-bottom pb-2 mb-3 text-uppercase">Education</h4>
+                    <div class="edu-item">
+                        <p class="mb-0 fw-bold">Universiti Malaysia Sabah (UMS)</p>
+                        <p class="text-muted small">Bachelor of Computer Science (Graphics & Multimedia)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal-wrapper" style="--delay: 5;">
+                <div class="about-section mb-5">
+                    <h4 class="fw-bold border-bottom pb-2 mb-3 text-uppercase">Toolkit</h4>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <span class="d-block small fw-bold text-muted mb-2">DESIGN</span>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-outline-dark">Figma</span>
+                                <span class="badge bg-outline-dark">Adobe Suite</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <span class="d-block small fw-bold text-muted mb-2">DEVELOPMENT</span>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-outline-dark">Unity (C#)</span>
+                                <span class="badge bg-outline-dark">Blender</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal-wrapper" style="--delay: 6;">
+                <div class="about-section mb-5">
+                    <h4 class="fw-bold border-bottom pb-2 mb-3 text-uppercase">Recognition</h4>
+                    <div class="edu-item">
+                    @* <div class="d-flex align-items-start">
+                        <i class="bi bi-trophy-fill text-dark me-3 fs-4"></i> *@
+                        <div>
+                            <p class="mb-0 fw-bold">Gold Award – Asian Youth Innovation</p>
+                            <p class="text-muted small">Malaysia Technology Expo (MTE) | 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal-wrapper" style="--delay: 2;">
+                <div class="mt-4">
+                    <a href="~/files/PANG JIA QI_Resume.pdf" target="_blank" class="btn btn-dark rounded-0 px-5 py-3 fw-bold w-100 w-md-auto">
+                        <i class="bi bi-file-earmark-arrow-down me-2"></i> DOWNLOAD CV
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Premium Page Background */
+    body {
+        /* Uses a very soft version of your palette for the background */
+        background: linear-gradient(180deg, #FFFFFF 0%, #FAF9F6 100%);
+        min-height: 100vh;
+    }
+
+    /* Section Divider with Palette Color */
+    .about-section h4 {
+        border-bottom: 2px solid #C7B8A2 !important; /* Custom Creme Border */
+        color: #8A7B66; /* Matching Text Color */
+        display: inline-block;
+        padding-bottom: 5px;
+        margin-bottom: 1.5rem;
+    }
+    /* Profile Image Styling */
+    .profile-img-wrapper {
+        width: 100%;
+        max-width: 400px;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        background: #f8f9fa;
+        border: 1px solid #eee;
+    }
+
+        .profile-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(20%); /* Optional: for a professional minimalist look */
+            transition: filter 0.3s ease;
+        }
+
+        .profile-img-wrapper:hover img {
+            filter: grayscale(0%);
+        }
+
+    /* Skills Styling */
+    .bg-outline-dark {
+        background: transparent;
+        color: #8A7B66;
+        border: 1px solid #C7B8A2;
+        padding: 8px 15px;
+        border-radius: 0;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 0.75rem;
+        transition: all 0.3s ease;
+    }
+
+        .bg-outline-dark:hover {
+            background: #C7B8A2;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+    .about-section h4 {
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+        color: #666;
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Mobile adjustments */
+    @@media (max-width: 768px) {
+        .profile-img-wrapper {
+            max-width: 100%;
+        }
+    }
+    /* 1. The Initial Hidden State */
+    .reveal-wrapper {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease-out;
+        /* This ensures the delay is applied based on your inline style */
+        transition-delay: calc(var(--delay) * 0.2s);
+    }
+
+        /* 2. The Visible State (Triggered by JS) */
+        .reveal-wrapper.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    /* Keep your existing hover effects below */
+    .browser-mockup {
+        transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        background: #fff;
+    }
+
+        .browser-mockup:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.12) !important;
+        }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                } else {
+                    entry.target.classList.remove("active");
+                }
+            });
+        }, observerOptions);
+
+        // Corrected selection and loop
+        const revealElements = document.querySelectorAll(".reveal-wrapper");
+        revealElements.forEach((el) => {
+            observer.observe(el);
+        });
+    });
+</script>

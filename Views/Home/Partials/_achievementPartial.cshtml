@@ -1,0 +1,566 @@
+﻿<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<div class="container py-5">
+    <div class="row mb-3">
+        <div class="col-12 text-center reveal-wrapper" style="--delay: 1;">
+            <h6 class="small fw-bold text-muted mb-2">SELF-LEARNING</h6>
+            <h2 class="fw-bold mb-5">Blender 3D Exploration</h2>
+        </div>
+    </div>
+
+    <div class="row g-3 mb-4 bento-grid">
+        <div class="col-md-8 d-flex reveal-wrapper" style="--delay: 1;">
+            <div class="video-container shadow rounded-4 overflow-hidden w-100 flex-grow-1">
+                <video controls class="w-100 h-100 object-fit-cover">
+                    <source src="/videos/Blender/FinishAnimation.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex reveal-wrapper" style="--delay: 2;">
+            <div class="video-container shadow rounded-4 overflow-hidden w-100 flex-grow-1">
+                <video controls class="w-100 h-100 object-fit-cover">
+                    <source src="/videos/Blender/Product.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-3 pb-3">
+        @* Removed reveal-wrapper from here *@
+        <div class="col-12">
+            <div class="position-relative gallery-container">
+                <button class="gallery-nav left" onclick="scrollGallery(this, -400)">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+
+                <div class="d-flex gap-3 overflow-auto pb-3 scroll-content">
+                    @for (int i = 1; i <= 8; i++)
+                    {
+                        int cappedDelay = ((i - 1) % 4) + 1;
+                        @* Added reveal-wrapper here with a dynamic delay *@
+                        <img src="/images/SelfLearn/Blender/ModelName@(i).png"
+                             class="rounded-4 shadow-sm pointer-zoom gallery-item reveal-wrapper"
+                             style="--delay: @(cappedDelay);"
+                             onclick="openLightbox(this.src)"
+                             alt="Blender Model @i">
+                    }
+                </div>
+
+                <button class="gallery-nav right" onclick="scrollGallery(this, 400)">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row align-items-center mb-5 pb-5 mt-5">
+        <div class="col-lg-4 reveal-wrapper" style="--delay: 1;">
+            <h6 class="small fw-bold text-primary mb-2">COMPETITIONS</h6>
+            <h2 class="fw-bold mb-4">Creativity Under Pressure</h2>
+            <p class="text-muted">Participating in school design challenges allowed me to experiment with AI generation and apparel design workflows.</p>
+        </div>
+        <div class="col-lg-8 reveal-wrapper" style="--delay: 2;">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="competition-card shadow-sm rounded-4 bg-white p-3 text-center">
+                        <img src="/images/SelfLearn/Others/Mascot-Competition.png" class="img-fluid rounded-3 mb-3 pointer-zoom" onclick="openLightbox(this.src)">
+                        <p class="small fw-bold mb-0 text-uppercase tracking-wider">Mascot Design (AI)</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="competition-card shadow-sm rounded-4 bg-white p-3 text-center">
+                        <img src="/images/SelfLearn/Others/t shirt MCG.png" class="img-fluid rounded-3 mb-3 pointer-zoom" onclick="openLightbox(this.src)">
+                        <p class="small fw-bold mb-0 text-uppercase tracking-wider">Course T-Shirt (PS)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-0 mb-5 overflow-hidden rounded-5 shadow-sm bg-light align-items-center reveal-wrapper" style="--delay: 1;">
+        <div class="col-md-5">
+            <img src="/images/SelfLearn/Others/RollupBanner.png"
+                 class="img-fluid w-100 pointer-zoom"
+                 style="max-height: 500px; object-fit: cover;"
+                 onclick="openLightbox(this.src)"
+                 alt="IT Specialist Rollup Banner">
+        </div>
+        <div class="col-md-7 p-5">
+            <h6 class="small fw-bold text-success mb-2" style="letter-spacing: 1px;">PROFESSIONAL MILESTONE</h6>
+            <h2 class="fw-bold mb-3">IT Specialist Roll-Up Banner</h2>
+            <p class="text-muted mb-4">
+                A commercial-grade print design developed for an IT Specialist client.
+                Executed in <strong>Adobe Photoshop</strong>, the project focused on balancing high-readability.
+            </p>
+            <div class="p-3 border-start border-4 border-success bg-white rounded-end shadow-sm">
+                <p class="mb-1 fw-bold text-dark">Impact & Result:</p>
+                <p class="mb-0 text-muted fst-italic">"Successfully met all client requirements on the first iteration."</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-0 mb-5 overflow-hidden rounded-5 shadow-sm bg-light align-items-center reveal-wrapper" style="--delay: 1;">
+        <div class="col-md-7 p-5 order-2 order-md-1">
+            <h6 class="small fw-bold text-success mb-2 text-uppercase" style="letter-spacing: 1px;">Distinction</h6>
+            <h2 class="fw-bold mb-3">Malaysia Technology Expo (MTE)</h2>
+            <p class="text-muted mb-4">Recognized at a national level for technical innovation and design excellence.</p>
+            <div class="p-3 border-start border-4 border-success bg-white rounded-end shadow-sm">
+                <div class="d-flex align-items-center mb-1">
+                    <i class="bi bi-trophy-fill text-warning me-2"></i>
+                    <span class="fw-bold text-dark">Gold Award Winner</span>
+                </div>
+                <p class="mb-0 text-muted fst-italic">"Outstanding Achievement in Educational Game Design."</p>
+            </div>
+        </div>
+        <div class="col-md-5 order-1 order-md-2 p-4 text-center">
+            <img src="/images/SelfLearn/achivement/award1.png"
+                 class="img-fluid rounded-4 shadow-lg pointer-zoom"
+                 style="max-height: 400px;"
+                 onclick="openLightbox(this.src)"
+                 alt="MTE Gold Award Certificate">
+        </div>
+    </div>
+</div>
+
+<div class="container reveal-wrapper" style="--delay: 1;">
+    <div class="row text-center mb-5">
+        <div class="col-12">
+            <h6 class="small fw-bold text-muted mb-2" style="letter-spacing: 2px;">EXPERTISE</h6>
+            <h2 class="fw-bold">Tools & Tech Stack</h2>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="skill-category p-4 rounded-4 bg-light h-100 shadow-sm transition-hover">
+                <div class="mb-3 text-primary"><i class="bi bi-vector-pen fs-3"></i></div>
+                <h5 class="fw-bold">UI/UX Design</h5>
+                <p class="small text-muted mb-4">Crafting intuitive user interfaces and seamless digital experiences.</p>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge rounded-pill bg-white text-dark border px-3">Figma</span>
+                    <span class="badge rounded-pill bg-white text-dark border px-3">Wix</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="skill-category p-4 rounded-4 bg-light h-100 shadow-sm transition-hover">
+                <div class="mb-3 text-success"><i class="bi bi-palette fs-3"></i></div>
+                <h5 class="fw-bold">Visual Branding</h5>
+                <p class="small text-muted mb-4">Developing cohesive brand identities and commercial print assets.</p>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge rounded-pill bg-white text-dark border px-3">Photoshop</span>
+                    <span class="badge rounded-pill bg-white text-dark border px-3">Illustrator</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="skill-category p-4 rounded-4 bg-light h-100 shadow-sm transition-hover">
+                <div class="mb-3 text-dark"><i class="bi bi-unity fs-3"></i></div>
+                <h5 class="fw-bold">Development & 3D</h5>
+                <p class="small text-muted mb-4">Building interactive loops and low-poly 3D models for games.</p>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge rounded-pill bg-white text-dark border px-3">Unity 3D</span>
+                    <span class="badge rounded-pill bg-white text-dark border px-3">Blender</span>
+                    <span class="badge rounded-pill bg-white text-dark border px-3">C# Scripting</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="customLightbox" class="custom-lightbox" onclick="closeLightbox()">
+    <span class="close-btn">&times;</span>
+    <img id="lightboxImg" src="" alt="Enlarged view">
+</div>
+
+<style>
+    /* Force consistent aspect ratios for the Blender grid */
+    .aspect-square {
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+    }
+
+        .aspect-square img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    /* Remove the fixed aspect-ratio to let flexbox handle height */
+    .video-container {
+        background: #000;
+        display: flex;
+        min-height: 100%; /* Ensures it fills the column height */
+    }
+
+    /* Keep object-fit: cover to ensure the vertical video
+                   fills its tall container without black bars */
+    video.object-fit-cover {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .scroll-content {
+        scroll-behavior: smooth;
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        -webkit-overflow-scrolling: touch;
+    }
+
+        .scroll-content::-webkit-scrollbar {
+            display: none;
+        }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .scroll-content {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+
+    /* 1. The Initial Hidden State */
+    .reveal-wrapper {
+        opacity: 0;
+        transform: translateY(30px);
+        /* transition: all 0.8s ease-out; */
+        /* Add grayscale and blur for a 'dreamy' start */
+        filter: grayscale(100%) blur(5px);
+        transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+        /* This ensures the delay is applied based on your inline style */
+        transition-delay: calc(var(--delay) * 0.2s);
+    }
+
+        /* 2. The Visible State (Triggered by JS) */
+        .reveal-wrapper.active {
+            opacity: 1;
+            transform: translateY(0);
+            /* Return to full color and sharpness */
+            filter: grayscale(0%) blur(0);
+        }
+    /* .reveal-wrapper {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); */
+        /* Capping the delay ensures this never gets too high */
+    /*     transition-delay: calc(var(--delay) * 0.1s);
+    } */
+  
+    /* Keep your existing hover effects below */
+    .browser-mockup {
+        transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        background: #fff;
+    }
+
+        .browser-mockup:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.12) !important;
+        }
+
+    /* Custom Horizontal Scrollbar for Gallery */
+    .custom-scrollbar::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 10px;
+    }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #999;
+        }
+
+    /* Figma Button Hover Effect */
+    .hover-up {
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+        .hover-up:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+        }
+
+    .gallery-item {
+        height: 250px; /* Adjust this to make images larger or smaller */
+        width: auto;
+        flex-shrink: 0; /* Prevents images from squishing */
+        object-fit: cover;
+    }
+
+    .gallery-nav {
+        position: absolute;
+        /* Adjusting 'top' to 45% moves it up slightly to visually center
+               it with the images while ignoring the bottom padding/scrollbar space */
+        top: 45%;
+        z-index: 10;
+
+        /* Glassmorphism Effect */
+        background: rgba(255, 255, 255, 0.4); /* Translucent white */
+        backdrop-filter: blur(8px); /* Frosted glass blur */
+        -webkit-backdrop-filter: blur(8px); /* Safari support */
+
+        border: none;
+        width: 44px; /* Slightly larger for better UX */
+        height: 44px;
+        border-radius: 50%;
+
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-50%); /* Keeps it centered at the new 45% point */
+    }
+
+        .gallery-nav i {
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        .gallery-nav:hover {
+            background: #fff;
+            /* Ensure translateY(-50%) stays here during the hover scale
+               so the button doesn't jump down when you hover over it */
+            transform: translateY(-50%) scale(1.15);
+            /* box-shadow: 0 6px 20px rgba(0,0,0,0.2); */
+            border-color: rgba(199, 184, 162, 0.8);
+            color: white;
+        }
+
+        .gallery-nav.left {
+            left: -20px;
+        }
+
+        .gallery-nav.right {
+            right: -20px;
+        }
+
+    /* Hide arrows on mobile for better touch scrolling */
+    @@media (max-width: 768px) {
+        .gallery-nav {
+            display: none;
+        }
+    }
+
+    /* Modern Competition Cards */
+    .competition-card {
+        transition: transform 0.3s ease;
+    }
+
+        .competition-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .competition-card img {
+            height: 250px;
+            width: 100%;
+            object-fit: contain; /* Good for vertical/horizontal mix */
+            background: #f8f9fa;
+        }
+
+    /* Achievement Section spacing */
+    .tracking-wider {
+        letter-spacing: 1px;
+    }
+
+    .pointer-zoom {
+        cursor: zoom-in;
+    }
+
+    /* Fix image bleed for rounded rows */
+    .row.g-0 {
+        border-radius: 2rem !important;
+    }
+
+    /* Lightbox Background */
+    .custom-lightbox {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(137, 137, 137, 0.5); /* grey theme */
+        backdrop-filter: blur(10px); /* Blurs the background content */
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        justify-content: center;
+        align-items: center;
+        cursor: zoom-out;
+    }
+
+        /* When Lightbox is active */
+        .custom-lightbox.show {
+            display: flex;
+            opacity: 1;
+        }
+
+        /* Lightbox Image Animation */
+        .custom-lightbox img {
+            max-width: 90%;
+            max-height: 85vh;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+            transform: scale(0.8);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .custom-lightbox.show img {
+            transform: scale(1);
+        }
+
+    /* Close Button */
+    .close-btn {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        font-size: 40px;
+        color: #333;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        .close-btn:hover {
+            color: #000;
+            transform: rotate(90deg);
+        }
+
+    .transition-hover {
+        transition: all 0.3s ease-in-out;
+        border: 1px solid transparent;
+    }
+
+        .transition-hover:hover {
+            transform: translateY(-5px);
+            background: #ffffff !important;
+            border-color: #eee;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05) !important;
+        }
+
+    .badge {
+        font-weight: 500;
+        font-size: 0.75rem;
+    }
+</style>
+
+<script>
+    // function scrollGallery(btn, distance) {
+    //     //Find the sibling gallery content div
+    //     const gallery = btn.parentElement.querySelector('.scroll-content');
+    //     gallery.scrollBy({
+    //         left: distance,
+    //         behavior: 'smooth'
+    //     });
+    // }
+
+        function openLightbox(src) {
+        const lightbox = document.getElementById('customLightbox');
+        const img = document.getElementById('lightboxImg');
+
+        img.src = src;
+        lightbox.style.display = 'flex';
+
+        // Small delay to trigger the CSS transition
+        setTimeout(() => {
+            lightbox.classList.add('show');
+        }, 10);
+
+        // Prevent scrolling while open
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        const lightbox = document.getElementById('customLightbox');
+        lightbox.classList.remove('show');
+
+        // Wait for animation to finish before hiding display
+        setTimeout(() => {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }, 400);
+    }
+
+        function scrollGallery(btn, distance) {
+        const gallery = btn.parentElement.querySelector('.scroll-content');
+        gallery.scrollBy({
+            left: distance,
+            behavior: 'smooth'
+        });
+    }
+
+    // Function to toggle arrow visibility
+    function updateArrows(galleryContainer) {
+        const gallery = galleryContainer.querySelector('.scroll-content');
+        const leftArrow = galleryContainer.querySelector('.gallery-nav.left');
+        const rightArrow = galleryContainer.querySelector('.gallery-nav.right');
+
+        // Hide left arrow if at the start
+        if (gallery.scrollLeft <= 5) {
+            leftArrow.style.opacity = "0";
+            leftArrow.style.pointerEvents = "none";
+        } else {
+            leftArrow.style.opacity = "1";
+            leftArrow.style.pointerEvents = "auto";
+        }
+
+        // Hide right arrow if at the end
+        if (gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth - 5) {
+            rightArrow.style.opacity = "0";
+            rightArrow.style.pointerEvents = "none";
+        } else {
+            rightArrow.style.opacity = "1";
+            rightArrow.style.pointerEvents = "auto";
+        }
+    }
+
+    // Initialize listeners for all galleries
+    document.addEventListener("DOMContentLoaded", function () {
+        const containers = document.querySelectorAll('.gallery-container');
+
+        containers.forEach(container => {
+            const scrollArea = container.querySelector('.scroll-content');
+
+            // Check arrows when scrolling
+            scrollArea.addEventListener('scroll', () => updateArrows(container));
+
+            // Initial check on load
+            updateArrows(container);
+        });
+    });
+
+    // Close on 'Esc' key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                } else {
+                    entry.target.classList.remove("active");
+                }
+            });
+        }, observerOptions);
+
+        // Corrected selection and loop
+        const revealElements = document.querySelectorAll(".reveal-wrapper");
+        revealElements.forEach((el) => {
+            observer.observe(el);
+        });
+    });
+</script>
+

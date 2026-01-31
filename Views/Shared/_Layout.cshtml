@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/FirstWebsite.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <style>
+        #backToTop {
+            display: none; /* Initially hidden */
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 99;
+            width: 50px;
+            height: 50px;
+            border-radius: 0; /* Matches your minimalist design */
+            border: none;
+            /* Change 1: Transparent background and dark icon color */
+            background-color: transparent;
+            color: #333;
+            border: none;
+            /* Change 2: Set original opacity */
+            opacity: 0.8;
+            cursor: pointer;
+            font-size: 24px;
+            transition: all 0.3s ease;
+        }
+
+            #backToTop:hover {
+                /* Change 3: Reduce opacity when touched/clicked */
+                opacity: 0.4;
+                transform: translateY(-5px);
+                background-color: transparent; /* Ensures it stays transparent */
+                color: #333;
+            }
+
+        .navbar-nav .nav-link {
+            transition: all 0.2s ease;
+            margin-right: 15px;
+            border-bottom: 2px solid transparent; /* Prepare the border space */
+        }
+
+            /* Styling for the active page */
+            .navbar-nav .nav-link.active {
+                color: #000 !important;
+                border-bottom: 2px solid #3A240F !important;
+            }
+
+            .navbar-nav .nav-link:hover {
+                color: #666 !important;
+            }
+
+        /* The progress container (background) */
+        .scroll-progress-container {
+            position: fixed;
+            top: 0;
+            z-index: 10000; /* Higher than Navbar */
+            width: 100%;
+            height: 4px;
+            background: transparent; /* Invisible background for a cleaner look */
+        }
+
+        /* The actual progress bar */
+        .scroll-progress-bar {
+            height: 4px;
+            background: #704F35; /* Minimalist Black - or use a primary color from your design */
+            width: 0%;
+            transition: width 0.1s ease-out;
+            border-radius: 0 2px 2px 0;
+        }
+
+    </style>
+</head>
+<body>
+    @{
+        // Get the current action name from the ViewContext
+        var currentAction = ViewContext.RouteData.Values["Action"]?.ToString();
+    }
+
+    <header class="sticky-top bg-white">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom mb-0">
+
+            <div class="scroll-progress-container">
+                <div class="scroll-progress-bar" id="myBar"></div>
+            </div>
+
+            <div class="container-fluid">
+                <span class="navbar-brand fw-bold text-dark" style="cursor: default;">Portfolio</span>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @(currentAction == "Index" ? "active fw-bold border-bottom border-dark" : "")"
+                               asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @(currentAction == "About" ? "active fw-bold border-bottom border-dark" : "text-dark")"
+                               asp-area="" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @(currentAction == "Contact" ? "active fw-bold border-bottom border-dark" : "text-dark")"
+                               asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2026 - FirstWebsite - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <button id="backToTop" class="shadow-sm" title="Go to top">
+        <i class="fas fa-angle-double-up"></i>
+    </button>
+
+    <script>
+        const backToTopBtn = document.getElementById("backToTop");
+
+        // Logic to show/hide button on scroll
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        // Smooth scroll to top
+        backToTopBtn.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+                window.onscroll = function() { updateProgressBar() };
+
+        function updateProgressBar() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+
+            // Update the width of the bar
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
+
+</body>
+</html>

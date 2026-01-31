@@ -1,0 +1,490 @@
+﻿<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<script>
+    document.getElementById("myBar").style.background = "#FF8A8A"; // Period App Theme
+</script>
+
+<div class="container py-5">
+    <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-lg-12 reveal-wrapper" style="--delay: 1;">
+            <h2 class="fw-bold mb-4 text-center">The Full Ecosystem</h2>
+            <div class="zigzag-img-wrapper shadow-lg rounded-4">
+                <img src="/images/PeriodApp/wireframe- Woman Health.png" class="img-fluid w-100" alt="Full Wireframe and Prototype">
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mb-5 pb-5 reveal-wrapper" style="--delay: 1;">
+        <a href="https://www.figma.com/proto/X5s3NP5UhbNdmsr7o8AJvI/wireframe--Woman-Health?page-id=0%3A1&node-id=4-1138&p=f&viewport=1063%2C480%2C0.16&t=Ut9lRZbU2r6h1u4P-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3%3A906" 
+            target="_blank" class="btn btn-dark px-5 py-3 rounded-pill fw-bold shadow hover-up">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" width="15" class="me-2" alt="Figma">
+            Open Interactive Figma Prototype
+        </a>
+    </div>
+
+    <div class="row align-items-center mb-5 pb-5">
+        <div class="col-md-5 reveal-wrapper" style="--delay: 1;">
+            <h6 class="small fw-bold text-primary mb-2">STRUCTURE</h6>
+            <h2 class="fw-bold mb-4">Wireframes & Logic</h2>
+            <p class="text-muted">Defining the user flow and architecture before moving into high-fidelity design.</p>
+        </div>
+
+        @* <div class="col-md-7 reveal-wrapper" style="--delay: 2;">
+            <div class="position-relative gallery-container">
+                <button class="gallery-nav left" onclick="scrollGallery(this, -300)">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+
+                <div class="d-flex gap-3 overflow-auto pb-3 custom-scrollbar scroll-content">
+                    @for (int i = 0; i <= 13; i++)
+                    {
+                        <img src="@($"/images/PeriodApp/Wireframe {i}.png")"
+                             class="rounded-3 shadow-sm pointer-zoom gallery-item"
+                             onclick="openLightbox(this.src)"
+                             alt="Blender Model @i" style="height: 300px; width: auto;">
+                    }
+                </div>
+
+                <button class="gallery-nav right" onclick="scrollGallery(this, 300)">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div> *@
+        <div class="col-md-7">
+            <div class="position-relative gallery-container">
+                <button class="gallery-nav left" onclick="scrollGallery(this, -300)">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+
+                <div class="d-flex gap-3 overflow-auto pb-3 custom-scrollbar scroll-content">
+                    @for (int i = 0; i <= 13; i++)
+                    {
+                        // Resets every 4 images so the last image isn't delayed too long
+                        int cappedDelay = (i % 4) + 1;
+
+                        <img src="/images/PeriodApp/Wireframe @(i).png"
+                             class="rounded-3 shadow-sm pointer-zoom gallery-item reveal-wrapper"
+                             style="--delay: @(cappedDelay); height: 300px; width: auto;"
+                             onclick="openLightbox(this.src)"
+                             alt="Wireframe @i">
+                    }
+                </div>
+
+                <button class="gallery-nav right" onclick="scrollGallery(this, 300)">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    @* <div class="row align-items-center mb-5 pb-5">
+        <div class="col-md-7 reveal-wrapper" style="--delay: 2;">
+            <div class="position-relative gallery-container">
+                <button class="gallery-nav left" onclick="scrollGallery(this, -300)">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+
+                <div class="d-flex gap-3 overflow-auto pb-3 custom-scrollbar scroll-content">
+                    @for (int i = 0; i <= 13; i++)
+                    {
+                        <img src="@($"/images/PeriodApp/Device-{i}.png")" 
+                             class="rounded-3 shadow-sm pointer-zoom gallery-item"
+                             onclick="openLightbox(this.src)"
+                             alt="Blender Model @i" style="height: 300px; width: auto;">
+                    }
+                </div>
+
+                <button class="gallery-nav right" onclick="scrollGallery(this, 300)">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-4 offset-md-1 order-1 order-md-2 reveal-wrapper" style="--delay: 1;">
+            <h6 class="small fw-bold text-success mb-2">FINAL UI</h6>
+            <h2 class="fw-bold mb-4">High-Fidelity Mockups</h2>
+            <p class="text-muted">The final visual layer, featuring a soft, calming palette designed to provide a comfortable experience for the user.</p>
+        </div>
+    </div> *@
+    <div class="row align-items-center mb-5 pb-5">
+        <div class="col-md-7">
+            <div class="position-relative gallery-container">
+                <button class="gallery-nav left" onclick="scrollGallery(this, -300)">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+
+                <div class="d-flex gap-3 overflow-auto pb-3 custom-scrollbar scroll-content">
+                    @for (int i = 0; i <= 13; i++)
+                    {
+                        // Logic to reset delay every 4 images (1, 2, 3, 4, 1, 2, 3, 4...)
+                        int cappedDelay = (i % 4) + 1;
+
+                        <img src="/images/PeriodApp/Device-@(i).png"
+                             class="rounded-3 shadow-sm pointer-zoom gallery-item reveal-wrapper"
+                             style="--delay: @(cappedDelay); height: 300px; width: auto;"
+                             onclick="openLightbox(this.src)"
+                             alt="Device Mockup @i">
+                    }
+                </div>
+
+                <button class="gallery-nav right" onclick="scrollGallery(this, 300)">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="col-md-4 offset-md-1 order-1 order-md-2 reveal-wrapper" style="--delay: 1;">
+            <h6 class="small fw-bold text-success mb-2">FINAL UI</h6>
+            <h2 class="fw-bold mb-4">High-Fidelity Mockups</h2>
+            <p class="text-muted">
+                The final visual layer, featuring a soft, calming palette designed to
+                provide a comfortable experience for the user.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="customLightbox" class="custom-lightbox" onclick="closeLightbox()">
+    <span class="close-btn">&times;</span>
+    <img id="lightboxImg" src="" alt="Enlarged view">
+</div>
+
+<style>
+    /* 1. The Initial Hidden State */
+    .reveal-wrapper {
+        opacity: 0;
+        transform: translateY(30px);
+        /* transition: all 0.8s ease-out; */
+        /* Add grayscale and blur for a 'dreamy' start */
+        filter: grayscale(100%) blur(5px);
+        transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+        /* This ensures the delay is applied based on your inline style */
+        transition-delay: calc(var(--delay) * 0.2s);
+    }
+
+        /* 2. The Visible State (Triggered by JS) */
+        .reveal-wrapper.active {
+            opacity: 1;
+            transform: translateY(0);
+            /* Return to full color and sharpness */
+            filter: grayscale(0%) blur(0);
+        }
+
+    /* Keep your existing hover effects below */
+    .browser-mockup {
+        transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        background: #fff;
+    }
+
+        .browser-mockup:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.12) !important;
+        }
+
+    /* Custom Horizontal Scrollbar for Gallery */
+    .custom-scrollbar::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 10px;
+    }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #999;
+        }
+
+    /* Figma Button Hover Effect */
+    .hover-up {
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+        .hover-up:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+        }
+
+    .zigzag-img-wrapper img {
+        transition: transform 0.5s ease;
+    }
+
+    .zigzag-img-wrapper:hover img {
+        transform: scale(1.02);
+    }
+
+    .gallery-container {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .gallery-nav {
+        position: absolute;
+        /* Adjusting 'top' to 45% moves it up slightly to visually center
+                   it with the images while ignoring the bottom padding/scrollbar space */
+        top: 45%;
+        z-index: 10;
+        /* Glassmorphism Effect */
+        background: rgba(255, 255, 255, 0.4); /* Translucent white */
+        backdrop-filter: blur(8px); /* Frosted glass blur */
+        -webkit-backdrop-filter: blur(8px); /* Safari support */
+
+        border: none;
+        width: 44px; /* Slightly larger for better UX */
+        height: 44px;
+        border-radius: 50%;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-50%); /* Keeps it centered at the new 45% point */
+    }
+
+        .gallery-nav i {
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        .gallery-nav:hover {
+            background: #fff;
+            /* Ensure translateY(-50%) stays here during the hover scale
+                   so the button doesn't jump down when you hover over it */
+            transform: translateY(-50%) scale(1.15);
+            /* box-shadow: 0 6px 20px rgba(0,0,0,0.2); */
+            border-color: rgba(199, 184, 162, 0.8);
+            color: white;
+        }
+
+        .gallery-nav.left {
+            left: -20px;
+        }
+
+        .gallery-nav.right {
+            right: -20px;
+        }
+
+    /* Hide arrows on mobile for better touch scrolling */
+    @@media (max-width: 768px) {
+        .gallery-nav {
+            display: none;
+        }
+    }
+
+    .scroll-content {
+        scroll-behavior: smooth;
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        -webkit-overflow-scrolling: touch;
+    }
+
+        .scroll-content::-webkit-scrollbar {
+            display: none;
+        }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .scroll-content {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+
+
+    /* Lightbox Background */
+    .custom-lightbox {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(137, 137, 137, 0.5); /* grey theme */
+        backdrop-filter: blur(10px); /* Blurs the background content */
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        justify-content: center;
+        align-items: center;
+        cursor: zoom-out;
+    }
+
+        /* When Lightbox is active */
+        .custom-lightbox.show {
+            display: flex;
+            opacity: 1;
+        }
+
+        /* Lightbox Image Animation */
+        .custom-lightbox img {
+            max-width: 90%;
+            max-height: 85vh;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+            transform: scale(0.8);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .custom-lightbox.show img {
+            transform: scale(1);
+        }
+
+    /* Close Button */
+    .close-btn {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        font-size: 40px;
+        color: #333;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        .close-btn:hover {
+            color: #000;
+            transform: rotate(90deg);
+        }
+</style>
+
+<script>
+    // function scrollGallery(btn, distance) {
+    //     //Find the sibling gallery content div
+    //     const gallery = btn.parentElement.querySelector('.scroll-content');
+    //     gallery.scrollBy({
+    //         left: distance,
+    //         behavior: 'smooth'
+    //     });
+    // }
+
+        function scrollGallery(btn, distance) {
+        const gallery = btn.parentElement.querySelector('.scroll-content');
+        gallery.scrollBy({
+            left: distance,
+            behavior: 'smooth'
+        });
+    }
+
+    // Function to toggle arrow visibility
+    function updateArrows(galleryContainer) {
+        const gallery = galleryContainer.querySelector('.scroll-content');
+        const leftArrow = galleryContainer.querySelector('.gallery-nav.left');
+        const rightArrow = galleryContainer.querySelector('.gallery-nav.right');
+
+        // Hide left arrow if at the start
+        if (gallery.scrollLeft <= 5) {
+            leftArrow.style.opacity = "0";
+            leftArrow.style.pointerEvents = "none";
+        } else {
+            leftArrow.style.opacity = "1";
+            leftArrow.style.pointerEvents = "auto";
+        }
+
+        // Hide right arrow if at the end
+        if (gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth - 5) {
+            rightArrow.style.opacity = "0";
+            rightArrow.style.pointerEvents = "none";
+        } else {
+            rightArrow.style.opacity = "1";
+            rightArrow.style.pointerEvents = "auto";
+        }
+    }
+
+    // Initialize listeners for all galleries
+    document.addEventListener("DOMContentLoaded", function () {
+        const containers = document.querySelectorAll('.gallery-container');
+
+        containers.forEach(container => {
+            const scrollArea = container.querySelector('.scroll-content');
+
+            // Check arrows when scrolling
+            scrollArea.addEventListener('scroll', () => updateArrows(container));
+
+            // Initial check on load
+            updateArrows(container);
+        });
+    });
+        function openLightbox(src) {
+        const lightbox = document.getElementById('customLightbox');
+        const img = document.getElementById('lightboxImg');
+
+        img.src = src;
+        lightbox.style.display = 'flex';
+
+        // Small delay to trigger the CSS transition
+        setTimeout(() => {
+            lightbox.classList.add('show');
+        }, 10);
+
+        // Prevent scrolling while open
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        const lightbox = document.getElementById('customLightbox');
+        lightbox.classList.remove('show');
+
+        // Wait for animation to finish before hiding display
+        setTimeout(() => {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }, 400);
+    }
+
+    // Close on 'Esc' key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                } else {
+                    entry.target.classList.remove("active");
+                }
+            });
+        }, observerOptions);
+
+        // Corrected selection and loop
+        const revealElements = document.querySelectorAll(".reveal-wrapper");
+        revealElements.forEach((el) => {
+            observer.observe(el);
+        });
+    });
+
+</script>
+
+
+@* <div class="row align-items-center mb-5 pb-5">
+        <div class="col-md-5 reveal-wrapper" style="--delay: 1;">
+            <h6 class="small fw-bold text-primary mb-2">STRUCTURE</h6>
+            <h2 class="fw-bold mb-4">Wireframes & Logic</h2>
+            <p class="text-muted">Defining the user flow and architecture before moving into high-fidelity design. This stage focused on accessibility and intuitive navigation.</p>
+        </div>
+        <div class="col-md-7 reveal-wrapper" style="--delay: 2;">
+            <div class="d-flex gap-3 overflow-auto pb-3 custom-scrollbar">
+                @for (int i = 1; i <= 13; i++)
+                {
+                    <img src="@($"/images/PeriodApp/Wireframe {i}.png")" class="rounded-3 shadow-sm" style="height: 300px; width: auto;">
+                }
+            </div>
+        </div>
+    </div> *@
+
+
+@* <div class="col-md-7 order-2 order-md-1 reveal-wrapper" style="--delay: 2;">
+            <div class="d-flex gap-3 overflow-auto pb-3 custom-scrollbar">
+                @for (int i = 1; i <= 13; i++)
+                {
+                    <img src="@($"/images/PeriodApp/Device-{i}.png")" class="rounded-3 shadow-sm" style="height: 300px; width: auto;">
+                }
+            </div>
+        </div> *@

@@ -1,0 +1,99 @@
+﻿@* <div class="row mb-4">
+    <div class="col-12">
+        <img src="@Model.ImageUrl" class="img-fluid w-100 rounded shadow-sm" style="height: 600px; object-fit: cover;">
+    </div>
+</div> *@
+
+<div class="container py-5 text-center">
+    <div class="row justify-content-center">
+        <div class="col-lg-10 reveal-wrapper" style="--delay: 0;">
+            <h3 class="display-6 fw-bold mb-4">Gameplay Preview</h3>
+
+            <div class="video-glow mb-4">
+                <div class="rounded-4 overflow-hidden shadow-lg">
+                    <video controls class="w-100 d-block" style="max-height: 600px; object-fit: fill;">
+                        <source src="/videos/3DGame.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <p class="text-muted mx-auto" style="max-width: 600px;">
+                A 3D game where players must collect specific flowers to win.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container pb-5">
+    <div class="reveal-wrapper" style="--delay: 1;">
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <img src="/images/contents/3D-1.png" class="img-fluid rounded-4 shadow-sm" style="height: 400px; width: 100%; object-fit: fill;">
+            
+                <p class="text-muted pt-4 ps-4 border-start">
+                User need to collect the specific flowers in time to win the level.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <img src="/images/contents/3D-2.png" class="img-fluid rounded-4 shadow-sm" style="height: 400px; width: 100%; object-fit: fill;">
+                <p class="text-muted pt-4 ps-4 border-start">
+                    Collide with the enemies will reduce the hp, when hp become empty, user will lose the game.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* 1. The Initial Hidden State */
+    .reveal-wrapper {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease-out;
+        /* This ensures the delay is applied based on your inline style */
+        transition-delay: calc(var(--delay) * 0.2s);
+    }
+
+        /* 2. The Visible State (Triggered by JS) */
+        .reveal-wrapper.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    /* Keep your existing hover effects below */
+    .browser-mockup {
+        transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        background: #fff;
+    }
+
+        .browser-mockup:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.12) !important;
+        }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                } else {
+                    entry.target.classList.remove("active");
+                }
+            });
+        }, observerOptions);
+
+        // Corrected selection and loop
+        const revealElements = document.querySelectorAll(".reveal-wrapper");
+        revealElements.forEach((el) => {
+            observer.observe(el);
+        });
+    });
+</script>

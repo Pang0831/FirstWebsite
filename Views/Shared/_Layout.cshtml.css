@@ -1,0 +1,104 @@
+﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/*a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a {
+  color: #0077cc;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}*/
+
+/* Overall body and font */
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #333;
+    padding-top: 20px;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+.navbar-nav {
+    flex-direction: row; /* Keep items horizontal */
+}
+
+.nav-item {
+    margin: 0 25px; /* Spacing between menu items */
+}
+
+.nav-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 3px; /* Spacing between letters for that modern look */
+    text-transform: uppercase;
+    color: #000 !important;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+    /* The black underline effect for the active/hovered link */
+    .nav-link:hover, .nav-link.active {
+        border-bottom: 2px solid #000;
+    }
+
+/* Remove default link colors */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+<li class="nav-item" >
+<a class="nav-link @(ViewData["Title"]?.ToString() == "Home" ? "active" : "")"
+asp-controller="Home" asp-action="Index" > HOME</a >
+</li >
+<li class="nav-item" >
+<a class="nav-link @(ViewData["Title"]?.ToString() == "Portfolio" ? "active" : "")"
+asp-controller="Home" asp-action="Portfolio" > PORTFOLIO</a >
+</li >
+<li class="nav-item" >
+<a class="nav-link @(ViewData["Title"]?.ToString() == "About" ? "active" : "")"
+asp-controller="Home" asp-action="About" > ABOUT</a >
+</li >

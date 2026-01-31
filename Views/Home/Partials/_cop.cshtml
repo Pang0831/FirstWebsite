@@ -1,0 +1,89 @@
+﻿<div class="container py-5">
+    <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-lg-12 reveal-wrapper" style="--delay: 1;">
+            <h6 class="small fw-bold text-muted mb-2 text-center">OVERVIEW</h6>
+            <h2 class="fw-bold mb-4 text-center">The Full Ecosystem</h2>
+            <div class="zigzag-img-wrapper shadow-lg rounded-4">
+                <img src="/images/PeriodApp/wireframe- Woman Health.png" class="img-fluid w-100" alt="Full Wireframe and Prototype">
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mb-5 pb-5 reveal-wrapper" style="--delay: 2;">
+        <a href="YOUR_FIGMA_LINK_HERE" target="_blank" class="btn btn-dark px-5 py-3 rounded-pill fw-bold shadow hover-up">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" width="15" class="me-2" alt="Figma">
+            Open Interactive Figma Prototype
+        </a>
+    </div>
+
+    <div class="row align-items-center mb-5 pb-5">
+        <div class="col-md-5 reveal-wrapper" style="--delay: 1;">
+            <h6 class="small fw-bold text-primary mb-2">STRUCTURE</h6>
+            <h2 class="fw-bold mb-4">Wireframes & Logic</h2>
+            <p class="text-muted">Defining the user flow and architecture before moving into high-fidelity design. This stage focused on accessibility and intuitive navigation.</p>
+        </div>
+        <div class="col-md-7 reveal-wrapper" style="--delay: 2;">
+            <div class="d-flex gap-3 overflow-auto pb-3 custom-scrollbar">
+                @for (int i = 1; i <= 13; i++)
+                {
+                    <img src="@($"/images/PeriodApp/Wireframe {i}.png")" class="rounded-3 shadow-sm" style="height: 300px; width: auto;">
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="row align-items-center mb-5 pb-5">
+        <div class="col-md-7 order-2 order-md-1 reveal-wrapper" style="--delay: 2;">
+            <div class="d-flex gap-3 overflow-auto pb-3 custom-scrollbar">
+                @for (int i = 1; i <= 13; i++)
+                {
+                    <img src="@($"/images/PeriodApp/Device-{i}.png")" class="rounded-3 shadow-sm" style="height: 300px; width: auto;">
+                }
+            </div>
+        </div>
+        <div class="col-md-4 offset-md-1 order-1 order-md-2 reveal-wrapper" style="--delay: 1;">
+            <h6 class="small fw-bold text-success mb-2">FINAL UI</h6>
+            <h2 class="fw-bold mb-4">High-Fidelity Mockups</h2>
+            <p class="text-muted">The final visual layer, featuring a soft, calming palette designed to provide a comfortable experience for the user.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Custom Horizontal Scrollbar for Gallery */
+    .custom-scrollbar::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 10px;
+    }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #999;
+        }
+
+    /* Figma Button Hover Effect */
+    .hover-up {
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+        .hover-up:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+        }
+
+    .zigzag-img-wrapper img {
+        transition: transform 0.5s ease;
+    }
+
+    .zigzag-img-wrapper:hover img {
+        transform: scale(1.02);
+    }
+</style>  
