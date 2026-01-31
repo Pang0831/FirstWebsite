@@ -2,7 +2,7 @@
 
 on:
   push:
-    branches: [ "main" ] # Runs when you push to the main branch
+    branches: [ "master" ] # Changed from main to master to match your branch
 
 jobs:
   build-and-deploy:
@@ -15,17 +15,18 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x' # Ensure this matches your project version
+        dotnet-version: '8.0.x' 
 
     - name: Publish Project
-      run: dotnet publish -c Release -o ./publish
+      # Added the subfolder path here so it finds your .csproj
+      run: dotnet publish FirstWebsite/FirstWebsite.csproj -c Release -o ./publish
 
     - name: Upload to SmarterASP via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ${{ secrets.win8056.site4now.net }}
-        username: ${{ secrets.NS1.SITE4NOW.NET }}
-        password: ${{ secrets.Ncx020308 }}
+        server: win8056.site4now.net
+        username: ${{ secrets.SMARTERASP_USERNAME }}
+        password: ${{ secrets.SMARTERASP_PASSWORD }}
         local-dir: ./publish/
         server-dir: http://pang0831-001-site1.anytempurl.com/ # Check your SmarterASP panel for the exact path
 
