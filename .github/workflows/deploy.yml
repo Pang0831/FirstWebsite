@@ -24,7 +24,7 @@ jobs:
     - name: Upload to SmarterASP via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: pang0831-001-site1.anytempurl.com
+        server: win8056.site4now.net
         username: ${{ secrets.SMARTERASP_USERNAME }}
         password: ${{ secrets.SMARTERASP_PASSWORD }}
         local-dir: ./publish/
