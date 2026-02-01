@@ -27,6 +27,6 @@ jobs:
         username: ${{ secrets.SMARTERASP_USERNAME }}
         password: ${{ secrets.SMARTERASP_PASSWORD }}
         local-dir: ./publish/
-        server-dir: /
+        server-dir: ./site1/
         # Sometimes adding this helps with 530 errors on SmarterASP
         protocol: ftp
