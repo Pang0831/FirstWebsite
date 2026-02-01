@@ -28,7 +28,6 @@ jobs:
         username: ${{ secrets.SMARTERASP_USERNAME }}
         password: ${{ secrets.SMARTERASP_PASSWORD }}
         local-dir: ./publish/
-        # Use / to upload to the root, which replaces the "Dear Customer" page
-        # server-dir: /
-        server-dir: /pangportfolio/ # Check your SmarterASP panel for the exact path
+        server-dir: /
+
 
