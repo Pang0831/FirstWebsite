@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Coding\\FirstWebsite\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\.github\\workflows\\deploy.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\.github\\workflows\\deploy.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -11,16 +19,8 @@
       "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\views\\home\\partials\\_period-apppartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\views\\home\\partials\\_period-apppartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\.github\\workflows\\deploy.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
-      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\.github\\workflows\\deploy.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -83,44 +83,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.gitignore",
-              "RelativeDocumentMoniker": "FirstWebsite\\.gitignore",
-              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.gitignore",
-              "RelativeToolTip": "FirstWebsite\\.gitignore",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-31T10:03:33.841Z",
+              "Title": "deploy.yml",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.github\\workflows\\deploy.yml",
+              "RelativeDocumentMoniker": "FirstWebsite\\.github\\workflows\\deploy.yml",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.github\\workflows\\deploy.yml",
+              "RelativeToolTip": "FirstWebsite\\.github\\workflows\\deploy.yml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAswBsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-01-31T09:24:23.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "FirstWebsite\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Controllers\\HomeController.cs",
               "RelativeToolTip": "FirstWebsite\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-24T09:34:34.692Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "deploy.yml",
-              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.github\\workflows\\deploy.yml",
-              "RelativeDocumentMoniker": "FirstWebsite\\.github\\workflows\\deploy.yml",
-              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.github\\workflows\\deploy.yml",
-              "RelativeToolTip": "FirstWebsite\\.github\\workflows\\deploy.yml",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAIwA8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-01-31T09:24:23.259Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Program.cs",
               "RelativeDocumentMoniker": "FirstWebsite\\Program.cs",
@@ -128,8 +116,7 @@
               "RelativeToolTip": "FirstWebsite\\Program.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T09:08:38.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T09:08:38.46Z"
             },
             {
               "$type": "Document",
@@ -145,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "_period-appPartial.cshtml",
               "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Partials\\_period-appPartial.cshtml",
               "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\Partials\\_period-appPartial.cshtml",
@@ -190,6 +177,22 @@
               "ViewState": "AgIAAJwAAAAAAAAAAAAAAJ8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-31T04:50:30.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": ".gitignore",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.gitignore",
+              "RelativeDocumentMoniker": "FirstWebsite\\.gitignore",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.gitignore",
+              "RelativeToolTip": "FirstWebsite\\.gitignore",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-31T10:03:33.841Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",

@@ -7,20 +7,24 @@
       "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\views\\home\\partials\\_period-apppartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\views\\home\\partials\\_period-apppartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\.github\\workflows\\deploy.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
       "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\.github\\workflows\\deploy.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\views\\home\\partials\\_period-apppartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\views\\home\\partials\\_period-apppartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|solutionrelative:firstwebsite\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89F2077E-A69A-9090-6EB1-F189D2AF6523}|FirstWebsite\\FirstWebsite.csproj|d:\\coding\\firstwebsite\\firstwebsite\\views\\home\\partials\\_3d-gamepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -62,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,6 +79,31 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": ".gitignore",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.gitignore",
+              "RelativeDocumentMoniker": "FirstWebsite\\.gitignore",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.gitignore",
+              "RelativeToolTip": "FirstWebsite\\.gitignore",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-31T10:03:33.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "deploy.yml",
+              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.github\\workflows\\deploy.yml",
+              "RelativeDocumentMoniker": "FirstWebsite\\.github\\workflows\\deploy.yml",
+              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.github\\workflows\\deploy.yml",
+              "RelativeToolTip": "FirstWebsite\\.github\\workflows\\deploy.yml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-01-31T09:24:23.259Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -91,31 +120,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "deploy.yml",
-              "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.github\\workflows\\deploy.yml",
-              "RelativeDocumentMoniker": "FirstWebsite\\.github\\workflows\\deploy.yml",
-              "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\.github\\workflows\\deploy.yml",
-              "RelativeToolTip": "FirstWebsite\\.github\\workflows\\deploy.yml",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAIwA8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-01-31T09:24:23.259Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Program.cs",
               "RelativeDocumentMoniker": "FirstWebsite\\Program.cs",
               "ToolTip": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Program.cs",
               "RelativeToolTip": "FirstWebsite\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-31T09:08:38.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "web.config",
               "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\web.config",
               "RelativeDocumentMoniker": "FirstWebsite\\web.config",
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "_period-appPartial.cshtml",
               "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Partials\\_period-appPartial.cshtml",
               "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\Partials\\_period-appPartial.cshtml",
@@ -139,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "_internshipPartial.cshtml",
               "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Partials\\_internshipPartial.cshtml",
               "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\Partials\\_internshipPartial.cshtml",
@@ -151,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "_cos-designPartial.cshtml",
               "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Partials\\_cos-designPartial.cshtml",
               "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\Partials\\_cos-designPartial.cshtml",
@@ -163,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\Index.cshtml",
@@ -175,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "_achievementPartial.cshtml",
               "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Partials\\_achievementPartial.cshtml",
               "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\Partials\\_achievementPartial.cshtml",
@@ -187,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "About.cshtml",
               "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\About.cshtml",
@@ -199,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Contact.cshtml",
               "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\Contact.cshtml",
@@ -211,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "_3d-gamePartial.cshtml",
               "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Home\\Partials\\_3d-gamePartial.cshtml",
               "RelativeDocumentMoniker": "FirstWebsite\\Views\\Home\\Partials\\_3d-gamePartial.cshtml",
@@ -223,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Coding\\FirstWebsite\\FirstWebsite\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "FirstWebsite\\Views\\Shared\\_Layout.cshtml",
