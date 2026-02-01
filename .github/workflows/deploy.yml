@@ -1,33 +1,29 @@
-﻿name: Build and Deploy to SmarterASP
+name: Deploy Website
 
 on:
   push:
-    branches: [ "master" ] # Changed from main to master to match your branch
+    branches: [ "master" ]
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x' 
+        dotnet-version: '10.0.x' # Fixes the "net10.0 not found" error
 
     - name: Publish Project
-      # Added the subfolder path here so it finds your .csproj
       run: dotnet publish FirstWebsite/FirstWebsite.csproj -c Release -o ./publish
 
     - name: Upload to SmarterASP via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: win8056.site4now.net
+        server: win8056.site4now.net # Fixes the 530/Connection error
         username: ${{ secrets.SMARTERASP_USERNAME }}
         password: ${{ secrets.SMARTERASP_PASSWORD }}
         local-dir: ./publish/
         server-dir: /
-
-
