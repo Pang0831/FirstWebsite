@@ -25,10 +25,10 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: win8056.site4now.net
-        username: ${{ secrets.11290962 }}
-        password: ${{ secrets.60-dayfreetrial }}
+        username: ${{ secrets.SMARTERASP_USERNAME }}
+        password: ${{ secrets.SMARTERASP_PASSWORD }}
         local-dir: ./publish/
         # Use / to upload to the root, which replaces the "Dear Customer" page
-        # server-dir: /
-        server-dir: /pangportfolio/ # Check your SmarterASP panel for the exact path
+        server-dir: /
+        #server-dir: /pangportfolio/ # Check your SmarterASP panel for the exact path
 
